@@ -8,18 +8,29 @@ output:
     keep_md: yes
 ---
 
-## Synopsis 
+## Health and Economic Impact of Weather Events in the US
 
-Based on the data from U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database, this paper explores the effects of severe natural events from 1950 to November 2011, more specifically the most harmful events with regard to human healths and economic damages. The data was read and cleaned up then got aggregated by event types. Harmful events to humans are measured by the number of fatalities and injuries while detrimental events to economics are measured by the number of property and crop damages. It turned out that tornado has the most negative impact causing highest fatality and injury, while flood led to the most property damage and drought led to the most crop damage.
+Storms and other severe weather events can cause both public health and economic
+problems for communities and municipalities. Many severe events can result in
+fatalities, injuries, and property damage, and preventing such outcomes to the extent
+possible is a key concern.
 
-## Questions Addressed
+This project involves exploring the U.S. National Oceanic and Atmospheric
+Administration's (NOAA) storm database. This database tracks characteristics of major
+storms and weather events in the United States, including when and where they occur, as
+well as estimates of any fatalities, injuries, and property damage.
 
-1. Across the United States, which types of events (as indicated in the ???????????????????????? variable) are most harmful with respect to population health?
+## Synopsis
 
-1. Across the United States, which types of events have the greatest economic consequences?
+The analysis on the storm event database revealed that tornadoes are the most
+dangerous weather event to the population health. The second most dangerous
+event type is the excessive heat. The economic impact of weather events was
+also analyzed. Flash floods and thunderstorm winds caused billions of dollars
+in property damages between 1950 and 2011. The largest crop damage caused by
+drought, followed by flood and hails.
+
 
 ## Data Processing
-
 
 
 ```{r pressure, cache=TRUE}
@@ -122,5 +133,3 @@ barplot(cropOrder[1:10,2]/10^9, col = rainbow(10), legend.text=cropOrder[1:10,1]
 ```
 
 The plot showed that flood, hirricane/typhoon and tornado hit the properties the hardest while drought and different types of flood hit the crop the hardest.
-
-
